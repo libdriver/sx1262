@@ -355,7 +355,7 @@ typedef enum
     SX1262_FSK_RX_STATUS_LENGTH_ERR   = (1 << 3),        /**< length err */
     SX1262_FSK_RX_STATUS_ABORT_ERR    = (1 << 2),        /**< abort err */
     SX1262_FSK_RX_STATUS_PKT_RECEIVED = (1 << 1),        /**< pkt received */
-    SX1262_FSK_RX_STATUS_PKT_SENT     = (1 << 0),        /**< pkt send */
+    SX1262_FSK_RX_STATUS_PKT_SEND     = (1 << 0),        /**< pkt send */
 } sx1262_fsk_rx_status_t;
 
 /**
