@@ -47,9 +47,9 @@ static volatile uint8_t gs_rx_done;        /**< rx done */
 
 /**
  * @brief     interface receive callback
- * @param[in] type is the receive callback type
- * @param[in] *buf points to a buffer address
- * @param[in] len is the buffer length
+ * @param[in] type receive callback type
+ * @param[in] *buf pointer to a buffer address
+ * @param[in] len buffer length
  * @note      none
  */
 static void a_callback(uint16_t type, uint8_t *buf, uint16_t len)
@@ -155,8 +155,8 @@ static void a_callback(uint16_t type, uint8_t *buf, uint16_t len)
 
 /**
  * @brief     sx1262 full function
- * @param[in] argc is arg numbers
- * @param[in] **argv is the arg address
+ * @param[in] argc arg numbers
+ * @param[in] **argv arg address
  * @return    status code
  *             - 0 success
  *             - 1 run failed
@@ -708,8 +708,8 @@ uint8_t sx1262(uint8_t argc, char **argv)
 
 /**
  * @brief     main function
- * @param[in] argc is arg numbers
- * @param[in] **argv is the arg address
+ * @param[in] argc arg numbers
+ * @param[in] **argv arg address
  * @return    status code
  *             - 0 success
  * @note      none

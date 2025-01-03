@@ -211,7 +211,7 @@ Functions</h2></td></tr>
 <p>interface busy gpio read </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*value</td><td>points to a value buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*value</td><td>pointer to a value buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -255,7 +255,7 @@ Functions</h2></td></tr>
 <p>interface print format data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fmt</td><td>is the format data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fmt</td><td>format data </td></tr>
   </table>
   </dd>
 </dl>
@@ -284,7 +284,7 @@ Functions</h2></td></tr>
 <p>interface delay ms </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ms</td><td></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ms</td><td>time </td></tr>
   </table>
   </dd>
 </dl>
@@ -329,9 +329,9 @@ Functions</h2></td></tr>
 <p>interface receive callback </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>is the receive callback type </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*buf</td><td>points to a buffer address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>is the buffer length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>receive callback type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*buf</td><td>pointer to a buffer address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>buffer length </td></tr>
   </table>
   </dd>
 </dl>
@@ -416,7 +416,7 @@ Functions</h2></td></tr>
 <p>interface reset gpio write </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>is the written data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>written data </td></tr>
   </table>
   </dd>
 </dl>
@@ -528,10 +528,10 @@ Functions</h2></td></tr>
 <p>interface spi bus write read </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*in_buf</td><td>points to a input buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td>is the input length </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*out_buf</td><td>points to a output buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td>is the output length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*in_buf</td><td>pointer to a input buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_len</td><td>input length </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*out_buf</td><td>pointer to a output buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">out_len</td><td>output length </td></tr>
   </table>
   </dd>
 </dl>

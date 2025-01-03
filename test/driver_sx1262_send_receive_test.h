@@ -68,7 +68,7 @@ uint8_t sx1262_send_test(void);
 
 /**
  * @brief     receive test
- * @param[in] s is the timeout time
+ * @param[in] s timeout
  * @return    status code
  *            - 0 success
  *            - 1 test failed

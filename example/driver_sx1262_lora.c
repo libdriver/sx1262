@@ -59,7 +59,7 @@ uint8_t sx1262_lora_irq_handler(void)
 
 /**
  * @brief     lora example init
- * @param[in] *callback points to a callback address
+ * @param[in] *callback pointer to a callback address
  * @return    status code
  *            - 0 success
  *            - 1 init failed
@@ -452,11 +452,12 @@ uint8_t sx1262_lora_set_continuous_receive_mode(void)
 }
 
 /**
- * @brief  lora example enter to the shot receive mode
- * @return status code
- *         - 0 success
- *         - 1 enter failed
- * @note   none
+ * @brief     lora example enter to the shot receive mode
+ * @param[in] us delay in us
+ * @return    status code
+ *            - 0 success
+ *            - 1 set failed
+ * @note      none
  */
 uint8_t sx1262_lora_set_shot_receive_mode(double us)
 {
@@ -539,8 +540,8 @@ uint8_t sx1262_lora_set_send_mode(void)
 
 /**
  * @brief     lora example send lora data
- * @param[in] *buf points to a data buffer
- * @param[in] len is the data length
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len data length
  * @return    status code
  *            - 0 success
  *            - 1 send failed
@@ -562,7 +563,7 @@ uint8_t sx1262_lora_send(uint8_t *buf, uint16_t len)
 
 /**
  * @brief      lora example run the cad
- * @param[out] *enable points to a enable buffer
+ * @param[out] *enable pointer to a enable buffer
  * @return     status code
  *             - 0 success
  *             - 1 run failed
@@ -589,8 +590,8 @@ uint8_t sx1262_lora_run_cad(sx1262_bool_t *enable)
 
 /**
  * @brief      lora example get the status
- * @param[out] *rssi points to a rssi buffer
- * @param[out] *snr points to a snr buffer
+ * @param[out] *rssi pointer to a rssi buffer
+ * @param[out] *snr pointer to a snr buffer
  * @return     status code
  *             - 0 success
  *             - 1 get status failed
@@ -615,7 +616,7 @@ uint8_t sx1262_lora_get_status(float *rssi, float *snr)
 
 /**
  * @brief      lora example check packet error
- * @param[out] *enable points to a bool value buffer
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 1 check packet error failed

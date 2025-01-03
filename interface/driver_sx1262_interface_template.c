@@ -62,10 +62,10 @@ uint8_t sx1262_interface_spi_deinit(void)
 
 /**
  * @brief      interface spi bus write read
- * @param[in]  *in_buf points to a input buffer
- * @param[in]  in_len is the input length
- * @param[out] *out_buf points to a output buffer
- * @param[in]  out_len is the output length
+ * @param[in]  *in_buf pointer to a input buffer
+ * @param[in]  in_len input length
+ * @param[out] *out_buf pointer to a output buffer
+ * @param[in]  out_len output length
  * @return     status code
  *             - 0 success
  *             - 1 write read failed
@@ -103,7 +103,7 @@ uint8_t sx1262_interface_reset_gpio_deinit(void)
 
 /**
  * @brief     interface reset gpio write
- * @param[in] data is the written data
+ * @param[in] data written data
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -140,7 +140,7 @@ uint8_t sx1262_interface_busy_gpio_deinit(void)
 
 /**
  * @brief      interface busy gpio read
- * @param[out] *value points to a value buffer
+ * @param[out] *value pointer to a value buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -153,7 +153,7 @@ uint8_t sx1262_interface_busy_gpio_read(uint8_t *value)
 
 /**
  * @brief     interface delay ms
- * @param[in] ms
+ * @param[in] ms time
  * @note      none
  */
 void sx1262_interface_delay_ms(uint32_t ms)
@@ -163,7 +163,7 @@ void sx1262_interface_delay_ms(uint32_t ms)
 
 /**
  * @brief     interface print format data
- * @param[in] fmt is the format data
+ * @param[in] fmt format data
  * @note      none
  */
 void sx1262_interface_debug_print(const char *const fmt, ...)
@@ -173,9 +173,9 @@ void sx1262_interface_debug_print(const char *const fmt, ...)
 
 /**
  * @brief     interface receive callback
- * @param[in] type is the receive callback type
- * @param[in] *buf points to a buffer address
- * @param[in] len is the buffer length
+ * @param[in] type receive callback type
+ * @param[in] *buf pointer to a buffer address
+ * @param[in] len buffer length
  * @note      none
  */
 void sx1262_interface_receive_callback(uint16_t type, uint8_t *buf, uint16_t len)
