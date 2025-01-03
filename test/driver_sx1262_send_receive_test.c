@@ -42,9 +42,9 @@ static uint8_t gs_send_buffer[256];      /**< inner send buffer*/
 
 /**
  * @brief     interface receive callback
- * @param[in] type is the receive callback type
- * @param[in] *buf points to a buffer address
- * @param[in] len is the buffer length
+ * @param[in] type receive callback type
+ * @param[in] *buf pointer to a buffer address
+ * @param[in] len buffer length
  * @note      none
  */
 static void a_callback(uint16_t type, uint8_t *buf, uint16_t len)
@@ -477,7 +477,7 @@ uint8_t sx1262_send_test(void)
 
 /**
  * @brief     receive test
- * @param[in] s is the timeout time
+ * @param[in] s timeout
  * @return    status code
  *            - 0 success
  *            - 1 test failed

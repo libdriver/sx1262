@@ -1401,8 +1401,8 @@ Functions</h2></td></tr>
 <p>check the packet error </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to a bool buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to a bool buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1437,7 +1437,7 @@ Functions</h2></td></tr>
 <p>clear the device errors </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -1484,8 +1484,8 @@ Functions</h2></td></tr>
 <p>clear the irq status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">clear_irq_param</td><td>is the irq mask </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">clear_irq_param</td><td>irq mask </td></tr>
   </table>
   </dd>
 </dl>
@@ -1522,7 +1522,7 @@ Functions</h2></td></tr>
 <p>enter to the continuous receive mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -1559,7 +1559,7 @@ Functions</h2></td></tr>
 <p>close the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -1615,9 +1615,9 @@ Functions</h2></td></tr>
 <p>convert the register raw data to the frequency </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>is the register raw data </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*freq</td><td>points to a frequency buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>register raw data </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*freq</td><td>pointer to a frequency buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1668,9 +1668,9 @@ Functions</h2></td></tr>
 <p>convert the frequency to the register raw data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">freq</td><td>is the frequency </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>points to a register raw buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">freq</td><td>frequency </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>pointer to a register raw buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1715,8 +1715,8 @@ Functions</h2></td></tr>
 <p>get the device errors </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*op_error</td><td>points to an op error buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*op_error</td><td>pointer to an op error buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1787,12 +1787,12 @@ Functions</h2></td></tr>
 <p>get the packet status in GFSK mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*rx_status</td><td>points to an rx status buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*rssi_sync_raw</td><td>points to an rssi sync raw buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*rssi_avg_raw</td><td>points to an rssi avg raw buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*rssi_sync</td><td>points to an rssi sync buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*rssi_avg</td><td>points to an rssi avg buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*rx_status</td><td>pointer to an rx status buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*rssi_sync_raw</td><td>pointer to an rssi sync raw buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*rssi_avg_raw</td><td>pointer to an rssi avg raw buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*rssi_sync</td><td>pointer to an rssi sync buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*rssi_avg</td><td>pointer to an rssi avg buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1845,9 +1845,9 @@ Functions</h2></td></tr>
 <p>get the instantaneous rssi </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*rssi_inst_raw</td><td>points to an rssi instantaneous raw buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*rssi_inst</td><td>points to an rssi instantaneous buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*rssi_inst_raw</td><td>pointer to an rssi instantaneous raw buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*rssi_inst</td><td>pointer to an rssi instantaneous buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1894,8 +1894,8 @@ Functions</h2></td></tr>
 <p>get the irq status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1972,13 +1972,13 @@ Functions</h2></td></tr>
 <p>get the packet status in LoRa mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*rssi_pkt_raw</td><td>points to an rssi packet raw buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*snr_pkt_raw</td><td>points to an snr packet raw buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*signal_rssi_pkt_raw</td><td>points to a signal rssi packet raw buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*rssi_pkt</td><td>points to an rssi packet buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*snr_pkt</td><td>points to an snr packet buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*signal_rssi_pkt</td><td>points to a signal rssi packet buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*rssi_pkt_raw</td><td>pointer to an rssi packet raw buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*snr_pkt_raw</td><td>pointer to an snr packet raw buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*signal_rssi_pkt_raw</td><td>pointer to a signal rssi packet raw buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*rssi_pkt</td><td>pointer to an rssi packet buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*snr_pkt</td><td>pointer to an snr packet buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*signal_rssi_pkt</td><td>pointer to a signal rssi packet buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2025,8 +2025,8 @@ Functions</h2></td></tr>
 <p>get the packet type </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*type</td><td>points to a packet type buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*type</td><td>pointer to a packet type buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2079,9 +2079,9 @@ Functions</h2></td></tr>
 <p>get the rx buffer status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*payload_length_rx</td><td>points to an rx payload length buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*rx_start_buffer_pointer</td><td>points to an rx start pointer buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*payload_length_rx</td><td>pointer to an rx payload length buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*rx_start_buffer_pointer</td><td>pointer to an rx start pointer buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2140,10 +2140,10 @@ Functions</h2></td></tr>
 <p>get the stats </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*pkt_received</td><td>points to a packet received counter buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*pkt_crc_error</td><td>points to a packet crc error buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*pkt_length_header_error</td><td>points to a packet length header error buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*pkt_received</td><td>pointer to a packet received counter buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*pkt_crc_error</td><td>pointer to a packet crc error buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*pkt_length_header_error</td><td>pointer to a packet length header error buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2190,8 +2190,8 @@ Functions</h2></td></tr>
 <p>get the status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2244,9 +2244,9 @@ Functions</h2></td></tr>
 <p>convert the register raw data to the bit rate </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>is the register raw data </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*br</td><td>points to a bit rate buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>register raw data </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*br</td><td>pointer to a bit rate buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2297,9 +2297,9 @@ Functions</h2></td></tr>
 <p>convert the bit rate to the register raw data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">br</td><td>is the bit rate </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>points to a register raw buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">br</td><td>bit rate </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>pointer to a register raw buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2350,9 +2350,9 @@ Functions</h2></td></tr>
 <p>convert the register raw data to the frequency deviation </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>is the register raw data </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*freq</td><td>points to a frequency deviation buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>register raw data </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*freq</td><td>pointer to a frequency deviation buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2403,9 +2403,9 @@ Functions</h2></td></tr>
 <p>convert the frequency deviation to the register raw data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">freq</td><td>is the frequency deviation </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>points to a register raw buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">freq</td><td>frequency deviation </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>pointer to a register raw buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2440,7 +2440,7 @@ Functions</h2></td></tr>
 <p>get chip's information </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>points to an sx1262 info structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>pointer to an sx1262 info structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -2474,7 +2474,7 @@ Functions</h2></td></tr>
 <p>initialize the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -2513,7 +2513,7 @@ Functions</h2></td></tr>
 <p>irq handler </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -2559,8 +2559,8 @@ Functions</h2></td></tr>
 <p>run the cad </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>points to an enable buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*enable</td><td>pointer to an enable buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2650,15 +2650,15 @@ Functions</h2></td></tr>
 <p>send the lora data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">standby_src</td><td>is the clock source </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">preamble_length</td><td>is the preamble length </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">header_type</td><td>is the header type </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">crc_type</td><td>is the crc type </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">invert_iq_enable</td><td>is a bool value </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*buf</td><td>points to a data buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>is the data length </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>is the timeout </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">standby_src</td><td>clock source </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">preamble_length</td><td>preamble length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">header_type</td><td>header type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">crc_type</td><td>crc type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">invert_iq_enable</td><td>bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*buf</td><td>pointer to a data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>data length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>timeout </td></tr>
   </table>
   </dd>
 </dl>
@@ -2720,10 +2720,10 @@ Functions</h2></td></tr>
 <p>read the buffer </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>is the buffer offset </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*buf</td><td>points to a data buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>is the data length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>buffer offset </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*buf</td><td>pointer to a data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>data length </td></tr>
   </table>
   </dd>
 </dl>
@@ -2782,10 +2782,10 @@ Functions</h2></td></tr>
 <p>read the register </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>is the register address </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*buf</td><td>points to a data buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>is the data length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>register address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*buf</td><td>pointer to a data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>data length </td></tr>
   </table>
   </dd>
 </dl>
@@ -2844,10 +2844,10 @@ Functions</h2></td></tr>
 <p>reset the stats </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pkt_received</td><td>is the received packet counter mask </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pkt_crc_error</td><td>is the packet crc error mask </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pkt_length_header_error</td><td>is the packet length header error mask </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pkt_received</td><td>received packet counter mask </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pkt_crc_error</td><td>packet crc error mask </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pkt_length_header_error</td><td>packet length header error mask </td></tr>
   </table>
   </dd>
 </dl>
@@ -2900,9 +2900,9 @@ Functions</h2></td></tr>
 <p>set the buffer base address </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">tx_base_addr</td><td>is the tx base address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rx_base_addr</td><td>is the rx base address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">tx_base_addr</td><td>tx base address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rx_base_addr</td><td>rx base address </td></tr>
   </table>
   </dd>
 </dl>
@@ -2939,7 +2939,7 @@ Functions</h2></td></tr>
 <p>run the cad </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -3010,12 +3010,12 @@ Functions</h2></td></tr>
 <p>set the cad params </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>is the cad symbol number </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">cad_det_peak</td><td>is the cad detection peak </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">cad_det_min</td><td>is the min cad detection peak </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>is the cad exit mode </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>is the cad timeout </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>cad symbol number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cad_det_peak</td><td>cad detection peak </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cad_det_min</td><td>min cad detection peak </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>cad exit mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>cad timeout </td></tr>
   </table>
   </dd>
 </dl>
@@ -3062,8 +3062,8 @@ Functions</h2></td></tr>
 <p>set the calibration settings </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">settings</td><td>is the calibration param </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">settings</td><td>calibration param </td></tr>
   </table>
   </dd>
 </dl>
@@ -3116,9 +3116,9 @@ Functions</h2></td></tr>
 <p>set the calibration image frequency </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">freq1</td><td>is the image frequency 1 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">freq2</td><td>is the image frequency 2 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">freq1</td><td>image frequency 1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">freq2</td><td>image frequency 2 </td></tr>
   </table>
   </dd>
 </dl>
@@ -3165,8 +3165,8 @@ Functions</h2></td></tr>
 <p>set dio2 as rf switch ctrl </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -3219,9 +3219,9 @@ Functions</h2></td></tr>
 <p>set dio3 as tcxo ctrl </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">voltage</td><td>is the tcxo voltage </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">delay</td><td>is the tcxo ctrl delay </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">voltage</td><td>tcxo voltage </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">delay</td><td>tcxo ctrl delay </td></tr>
   </table>
   </dd>
 </dl>
@@ -3286,11 +3286,11 @@ Functions</h2></td></tr>
 <p>set the dio irq params </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">irq_mask</td><td>is the irq mask </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dio1_mask</td><td>is the dio1 mask </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dio2_mask</td><td>is the dio2 mask </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dio3_mask</td><td>is the dio3 mask </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">irq_mask</td><td>irq mask </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dio1_mask</td><td>dio1 mask </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dio2_mask</td><td>dio2 mask </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dio3_mask</td><td>dio3 mask </td></tr>
   </table>
   </dd>
 </dl>
@@ -3327,7 +3327,7 @@ Functions</h2></td></tr>
 <p>enter to the frequency synthesis mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -3392,11 +3392,11 @@ Functions</h2></td></tr>
 <p>set the modulation params in GFSK mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">br</td><td>is the bit rate </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">shape</td><td>is the pulse shape </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bw</td><td>is the bandwidth </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fdev</td><td>is the frequency deviation </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">br</td><td>bit rate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shape</td><td>pulse shape </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bw</td><td>bandwidth </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fdev</td><td>frequency deviation </td></tr>
   </table>
   </dd>
 </dl>
@@ -3485,15 +3485,15 @@ Functions</h2></td></tr>
 <p>set the packet params in GFSK mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">preamble_length</td><td>is the preamble length </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">detector_length</td><td>is the preamble detector length </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sync_word_length</td><td>is the sync word length </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>is the address filter </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">packet_type</td><td>is the packet type </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">payload_length</td><td>is the length of the payload </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">crc_type</td><td>is the crc type </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">whitening_enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">preamble_length</td><td>preamble length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">detector_length</td><td>preamble detector length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sync_word_length</td><td>sync word length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">filter</td><td>address filter </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">packet_type</td><td>packet type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">payload_length</td><td>length of the payload </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">crc_type</td><td>crc type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">whitening_enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -3559,11 +3559,11 @@ Functions</h2></td></tr>
 <p>set the modulation params in LoRa mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sf</td><td>is the spreading factor </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">bw</td><td>is the bandwidth </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">cr</td><td>is coding rate </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">low_data_rate_optimize_enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sf</td><td>spreading factor </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bw</td><td>bandwidth </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cr</td><td>coding rate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">low_data_rate_optimize_enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -3634,12 +3634,12 @@ Functions</h2></td></tr>
 <p>set the packet params in LoRa mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">preamble_length</td><td>is the preamble length </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">header_type</td><td>is the header type </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">payload_length</td><td>is the length of payload </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">crc_type</td><td>is the crc type </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">invert_iq_enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">preamble_length</td><td>preamble length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">header_type</td><td>header type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">payload_length</td><td>length of payload </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">crc_type</td><td>crc type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">invert_iq_enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -3686,8 +3686,8 @@ Functions</h2></td></tr>
 <p>set the lora symbol number timeout </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">symb_num</td><td>is the symbol number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">symb_num</td><td>symbol number </td></tr>
   </table>
   </dd>
 </dl>
@@ -3740,9 +3740,9 @@ Functions</h2></td></tr>
 <p>set the pa config </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pa_duty_cycle</td><td>is the pa duty cycle </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">hp_max</td><td>is the max power </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pa_duty_cycle</td><td>pa duty cycle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hp_max</td><td>max power </td></tr>
   </table>
   </dd>
 </dl>
@@ -3789,8 +3789,8 @@ Functions</h2></td></tr>
 <p>set the packet type </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>is the packet type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>packet type </td></tr>
   </table>
   </dd>
 </dl>
@@ -3837,8 +3837,8 @@ Functions</h2></td></tr>
 <p>set the regulator_mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>is the regulator mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>regulator mode </td></tr>
   </table>
   </dd>
 </dl>
@@ -3885,8 +3885,8 @@ Functions</h2></td></tr>
 <p>set the rf frequency </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>is the rf frequency register data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>rf frequency register data </td></tr>
   </table>
   </dd>
 </dl>
@@ -3933,8 +3933,8 @@ Functions</h2></td></tr>
 <p>enter to the rx mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>is the rx timeout </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>rx timeout </td></tr>
   </table>
   </dd>
 </dl>
@@ -3987,9 +3987,9 @@ Functions</h2></td></tr>
 <p>set the rx duty cycle </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rx_period</td><td>is the rx period </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sleep_period</td><td>is the sleep period </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rx_period</td><td>rx period </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sleep_period</td><td>sleep period </td></tr>
   </table>
   </dd>
 </dl>
@@ -4036,8 +4036,8 @@ Functions</h2></td></tr>
 <p>set the rx tx fallback mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>is the rx tx fallback mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>rx tx fallback mode </td></tr>
   </table>
   </dd>
 </dl>
@@ -4090,9 +4090,9 @@ Functions</h2></td></tr>
 <p>enter to the sleep mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>is the start mode </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rtc_wake_up_enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>start mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rtc_wake_up_enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -4139,8 +4139,8 @@ Functions</h2></td></tr>
 <p>enter to the standby mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>is the clock source </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>clock source </td></tr>
   </table>
   </dd>
 </dl>
@@ -4187,8 +4187,8 @@ Functions</h2></td></tr>
 <p>stop timer on preamble </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
   </table>
   </dd>
 </dl>
@@ -4235,8 +4235,8 @@ Functions</h2></td></tr>
 <p>enter to the tx mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>is the tx timeout </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>tx timeout </td></tr>
   </table>
   </dd>
 </dl>
@@ -4273,7 +4273,7 @@ Functions</h2></td></tr>
 <p>enter to the tx continuous wave mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -4310,7 +4310,7 @@ Functions</h2></td></tr>
 <p>enter to the tx infinite preamble mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -4363,9 +4363,9 @@ Functions</h2></td></tr>
 <p>set the tx params </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dbm</td><td>is the rf power </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>is the ramp time </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dbm</td><td>rf power </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">t</td><td>ramp time </td></tr>
   </table>
   </dd>
 </dl>
@@ -4412,8 +4412,8 @@ Functions</h2></td></tr>
 <p>enter to the single receive mode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>is the rx timeout </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>rx timeout </td></tr>
   </table>
   </dd>
 </dl>
@@ -4466,9 +4466,9 @@ Functions</h2></td></tr>
 <p>convert the register raw data to the timeout </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>is the register raw data </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*us</td><td>points to a us buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>register raw data </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*us</td><td>pointer to a us buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -4519,9 +4519,9 @@ Functions</h2></td></tr>
 <p>convert the timeout to the register raw data </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>is the timeout </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>points to a register raw buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">us</td><td>timeout </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*reg</td><td>pointer to a register raw buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -4578,10 +4578,10 @@ Functions</h2></td></tr>
 <p>write the buffer </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>is the buffer offset </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*buf</td><td>points to a data buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>is the data length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>buffer offset </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*buf</td><td>pointer to a data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>data length </td></tr>
   </table>
   </dd>
 </dl>
@@ -4640,10 +4640,10 @@ Functions</h2></td></tr>
 <p>write the register </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an sx1262 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>is the register address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*buf</td><td>points to a data buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>is the data length </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an sx1262 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>register address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*buf</td><td>pointer to a data buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>data length </td></tr>
   </table>
   </dd>
 </dl>
