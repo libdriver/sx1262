@@ -220,12 +220,9 @@ var NAVTREEINDEX0 =
 "group__sx1262__command__driver.html#ga5d82b81dd9091715009e3f36027d2052":[2,0,3,1,156],
 "group__sx1262__command__driver.html#ga69e39d7eeea982396e2d8486084c7d4e":[0,0,1,24],
 "group__sx1262__command__driver.html#ga69e39d7eeea982396e2d8486084c7d4e":[2,0,3,1,35],
-"group__sx1262__command__driver.html#ga6b96b96de9c4939462129384ce80f792":[2,0,3,0,121],
-"group__sx1262__command__driver.html#ga6b96b96de9c4939462129384ce80f792":[2,0,3,1,69],
-"group__sx1262__command__driver.html#ga6b96b96de9c4939462129384ce80f792":[0,0,1,40],
 "group__sx1262__command__driver.html#ga6d7adf139a7f197302bf324f55601c58":[2,0,3,0,129],
-"group__sx1262__command__driver.html#ga6d7adf139a7f197302bf324f55601c58":[0,0,1,42],
 "group__sx1262__command__driver.html#ga6d7adf139a7f197302bf324f55601c58":[2,0,3,1,77],
+"group__sx1262__command__driver.html#ga6d7adf139a7f197302bf324f55601c58":[0,0,1,42],
 "group__sx1262__command__driver.html#ga6df5902c33c01a998557d052af3dcb7e":[0,0,1,26],
 "group__sx1262__command__driver.html#ga6df5902c33c01a998557d052af3dcb7e":[2,0,3,1,37],
 "group__sx1262__command__driver.html#ga70bb14c46816dc81f6eccad744e67285":[2,0,3,0,120],
@@ -249,5 +246,8 @@ var NAVTREEINDEX0 =
 "group__sx1262__command__driver.html#ga898ce1463aaafc860a420d32db10ad5d":[2,0,3,1,38],
 "group__sx1262__command__driver.html#ga89f7522e924a12af219009050ead6048":[0,0,1,70],
 "group__sx1262__command__driver.html#ga89f7522e924a12af219009050ead6048":[2,0,3,0,180],
-"group__sx1262__command__driver.html#ga89f7522e924a12af219009050ead6048":[2,0,3,1,128]
+"group__sx1262__command__driver.html#ga89f7522e924a12af219009050ead6048":[2,0,3,1,128],
+"group__sx1262__command__driver.html#ga8d6cd147a6e16b33f5cc3c0136c2792f":[2,0,3,0,147],
+"group__sx1262__command__driver.html#ga8d6cd147a6e16b33f5cc3c0136c2792f":[2,0,3,1,95],
+"group__sx1262__command__driver.html#ga8d6cd147a6e16b33f5cc3c0136c2792f":[0,0,1,55]
 };

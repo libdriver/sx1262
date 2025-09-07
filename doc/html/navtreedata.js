@@ -51,7 +51,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"group__sx1262__command__driver.html#ga8d6cd147a6e16b33f5cc3c0136c2792f",
+"group__sx1262__command__driver.html#ga8da55d094d9b93d06a7d8876dacab481",
 "group__sx1262__command__driver.html#gga6df5902c33c01a998557d052af3dcb7ea3f924ce0729723d76b96b3cacc5049f2",
 "group__sx1262__interface__driver.html#ga2bee1b35ea827bdc80de89f9c25c1a2e",
 "mainpage_8h_source.html"

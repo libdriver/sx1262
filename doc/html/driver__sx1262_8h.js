@@ -231,7 +231,7 @@ var driver__sx1262_8h =
     [ "sx1262_get_instantaneous_rssi", "group__sx1262__command__driver.html#gacc9e87de27ade4e5605c156d104ba695", null ],
     [ "sx1262_get_iq_polarity", "group__sx1262__register__driver.html#ga1db8d8bae9c96a7e88959d4bd046d0ca", null ],
     [ "sx1262_get_irq_status", "group__sx1262__command__driver.html#ga70bb14c46816dc81f6eccad744e67285", null ],
-    [ "sx1262_get_lora_packet_status", "group__sx1262__command__driver.html#ga6b96b96de9c4939462129384ce80f792", null ],
+    [ "sx1262_get_lora_packet_status", "group__sx1262__command__driver.html#gac2fa82986060c53ca0bc02409fb50a07", null ],
     [ "sx1262_get_lora_sync_word", "group__sx1262__register__driver.html#ga2d641a74e8c03021c3409fee51f803b9", null ],
     [ "sx1262_get_ocp", "group__sx1262__register__driver.html#gae7bfa25641cd9570f187053dea0fc0d6", null ],
     [ "sx1262_get_packet_type", "group__sx1262__command__driver.html#gac746b31d6373d2938e37c6ddc357dae5", null ],

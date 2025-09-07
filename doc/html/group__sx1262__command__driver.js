@@ -233,7 +233,7 @@ var group__sx1262__command__driver =
     [ "sx1262_get_gfsk_packet_status", "group__sx1262__command__driver.html#ga151901f3a66798e9c844886c83890f34", null ],
     [ "sx1262_get_instantaneous_rssi", "group__sx1262__command__driver.html#gacc9e87de27ade4e5605c156d104ba695", null ],
     [ "sx1262_get_irq_status", "group__sx1262__command__driver.html#ga70bb14c46816dc81f6eccad744e67285", null ],
-    [ "sx1262_get_lora_packet_status", "group__sx1262__command__driver.html#ga6b96b96de9c4939462129384ce80f792", null ],
+    [ "sx1262_get_lora_packet_status", "group__sx1262__command__driver.html#gac2fa82986060c53ca0bc02409fb50a07", null ],
     [ "sx1262_get_packet_type", "group__sx1262__command__driver.html#gac746b31d6373d2938e37c6ddc357dae5", null ],
     [ "sx1262_get_rx_buffer_status", "group__sx1262__command__driver.html#ga6d7adf139a7f197302bf324f55601c58", null ],
     [ "sx1262_get_stats", "group__sx1262__command__driver.html#gaeb453dbbf386129ea99e65882dbc9ee5", null ],

@@ -62,7 +62,7 @@ static void a_callback(uint16_t type, uint8_t *buf, uint16_t len)
             uint16_t i;
             sx1262_bool_t enable;
             uint8_t rssi_pkt_raw;
-            uint8_t snr_pkt_raw;
+            int8_t snr_pkt_raw;
             uint8_t signal_rssi_pkt_raw;
             float rssi_pkt;
             float snr_pkt;
@@ -71,7 +71,7 @@ static void a_callback(uint16_t type, uint8_t *buf, uint16_t len)
             sx1262_interface_debug_print("sx1262: irq rx done.\n");
             
             /* get the status */
-            if (sx1262_get_lora_packet_status(&gs_handle, (uint8_t *)&rssi_pkt_raw, (uint8_t *)&snr_pkt_raw,
+            if (sx1262_get_lora_packet_status(&gs_handle, (uint8_t *)&rssi_pkt_raw, (int8_t *)&snr_pkt_raw,
                                              (uint8_t *)&signal_rssi_pkt_raw, (float *)&rssi_pkt,
                                              (float *)&snr_pkt, (float *)&signal_rssi_pkt) != 0)
             {

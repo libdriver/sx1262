@@ -600,12 +600,12 @@ uint8_t sx1262_lora_run_cad(sx1262_bool_t *enable)
 uint8_t sx1262_lora_get_status(float *rssi, float *snr)
 {
     uint8_t rssi_pkt_raw;
-    uint8_t snr_pkt_raw;
+    int8_t snr_pkt_raw;
     uint8_t signal_rssi_pkt_raw;
     float signal_rssi_pkt;
     
     /* get the status */
-    if (sx1262_get_lora_packet_status(&gs_handle, (uint8_t *)&rssi_pkt_raw, (uint8_t *)&snr_pkt_raw,
+    if (sx1262_get_lora_packet_status(&gs_handle, (uint8_t *)&rssi_pkt_raw, (int8_t *)&snr_pkt_raw,
                                      (uint8_t *)&signal_rssi_pkt_raw, (float *)rssi, (float *)snr, (float *)&signal_rssi_pkt) != 0)
     {
         return 1;
