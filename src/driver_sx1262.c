@@ -3378,7 +3378,7 @@ uint8_t sx1262_get_gfsk_packet_status(sx1262_handle_t *handle, uint8_t *rx_statu
  *             - 4 chip is busy
  * @note       none
  */
-uint8_t sx1262_get_lora_packet_status(sx1262_handle_t *handle, uint8_t *rssi_pkt_raw, uint8_t *snr_pkt_raw,
+uint8_t sx1262_get_lora_packet_status(sx1262_handle_t *handle, uint8_t *rssi_pkt_raw, int8_t *snr_pkt_raw,
                                       uint8_t *signal_rssi_pkt_raw, float *rssi_pkt, float *snr_pkt, float *signal_rssi_pkt)
 {
     uint8_t res;
@@ -3409,7 +3409,7 @@ uint8_t sx1262_get_lora_packet_status(sx1262_handle_t *handle, uint8_t *rssi_pkt
         return 1;                                                                               /* return error */
     }
     *rssi_pkt_raw= buf[1];                                                                      /* set status */
-    *snr_pkt_raw = buf[2];                                                                      /* set status */
+    *snr_pkt_raw = (int8_t)buf[2];                                                              /* set status */
     *signal_rssi_pkt_raw = buf[3];                                                              /* set status */
     *rssi_pkt = -(float)(*rssi_pkt_raw) / 2.0f;                                                 /* set status */
     *snr_pkt = (float)(*snr_pkt_raw) / 4.0f;                                                    /* set status */

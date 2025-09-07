@@ -10,7 +10,7 @@
 
 SX1262 sub-GHz radio transceivers are ideal for long range wireless applications. Both devices are designed for long battery life with just 4.2 mA of active receive current consumption. The SX1261 can transmit up to +15dBm and the SX1262 and SX1268 can transmit up to +22dBm with highly efficient integrated power amplifiers.These devices support LoRa® and Long Range FHSS modulations for LPWAN use cases and (G)FSK modulation for legacy use cases. The devices are highly configurable to meet different application requirements utilizing the global LoRaWAN® standard or proprietary protocols.The devices are designed to comply with the physical layer requirements of the LoRaWAN specification released by the LoRa Alliance®.The radio is suitable for systems targeting compliance with radio regulations including but not limited to ETSI EN 300 220, FCC CFR 47 Part 15, China regulatory requirements and the Japanese ARIB T-108. Continuous frequency coverage from 150MHz to 960MHz allows the support of all major sub-GHz ISM bands around the world.
 
-LibDriver SX1262 is a full-featured driver of SX1262 launched by LibDriver.It provides functions of wireless sending, wireless receiving, cad, etc. LibDriver is MISRA compliant.
+LibDriver SX1262 is a full-featured driver for SX1262, launched by LibDriver.It provides wireless sending, wireless receiving, cad and additional features. LibDriver is MISRA compliant.
 
 ### Table of Contents
 

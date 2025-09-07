@@ -1,3 +1,9 @@
+## 1.0.6 (2025-09-07)
+
+## Bug Fixes
+
+- fix snr error
+
 ## 1.0.5 (2025-04-16)
 
 ## Bug Fixes
